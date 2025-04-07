@@ -1,6 +1,6 @@
 # SOARed
 
-**SOARed** (Security Orchestration, Automation, and Red Team Detection) is a Python-based AI agent designed to detect red team PowerShell attacks in SOC logs and integrate with [Shuffle](https://github.com/Sh Easteruffle/Shuffle) for automated SOAR responses. It identifies suspicious commands, generates alerts, and triggers workflows to notify teams, isolate hosts, or log incidents.
+**SOARed** (Security Orchestration, Automation, and Red Team Detection) is a Python-based AI agent designed to detect red team PowerShell attacks in SOC logs and integrate with Shuffle for automated SOAR responses. It identifies suspicious commands, generates alerts, and triggers workflows to notify teams, isolate hosts, or log incidents.
 
 **Current Version:** 1.0  
 **Date:** April 07, 2025
